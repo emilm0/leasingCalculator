@@ -1,13 +1,15 @@
 .form-inline {
     margin: auto;
     background-color: rgb(155, 184, 240);
-    width: 80%;
+    width: 95%;
 }
 
-.form-grup {
-    width: 25%;
-    height: 300px;
-    color: black;
+.form-group {
+    margin: 10px;
+    background-color: darksalmon;
+    padding: 30px;
+    width: 500px;
+    height: 500px;
 }
 
 #f1 {
