@@ -1,0 +1,19 @@
+.form-inline {
+    margin: auto;
+    background-color: rgb(155, 184, 240);
+    width: 80%;
+}
+
+.form-grup {
+    width: 25%;
+    height: 300px;
+    color: black;
+}
+
+#f1 {
+    background-color: blueviolet;
+}
+
+#f2 {
+    background-color: red;
+}

@@ -3,5 +3,6 @@
 }
 
 .navbar-brand {
-    margin: 0 10ex 0 10ex;
+    text-align: center;
+    margin: auto;
 }
