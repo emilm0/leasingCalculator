@@ -1,3 +1,8 @@
 .page-footer {
     background-color: rgb(33, 166, 175);
+    bottom:0;
+    width: 100%;
+    display: flexbox;
+    align-items: flex-end;
+    
 }

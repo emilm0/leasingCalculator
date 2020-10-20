@@ -1,18 +1,19 @@
 .container {
-    background-color: rgb(155, 184, 240);
-    width: 100%;
-    height: 200px;
-
+    background-color: rgb(221, 221, 219);  
+    opacity: 0.9;  
 }
 
 .row {
-    background-color: darksalmon;
-}
-
-#f1 {
-    background-color: blueviolet;
+    /* background-color: rgb(247, 225, 217); */
 }
 
 #f2 {
-    background-color: red;
+    margin: 3%;
 }
+#calculator{
+    opacity: 1.0;  
+
+    margin: 3%;
+
+}
+

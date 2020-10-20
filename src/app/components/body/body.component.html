@@ -1,15 +1,24 @@
 <div class="container">
-   
+   <h1>Kalkulator leasingowy</h1>
+   <h2>Sprawdź jakie to proste!</h2>
     <div class="row">
-        <div class="col-lg-6 order-2 order-lg-1" id="f1">
-            section 1
-            <!-- <app-calculator></app-calculator> -->
+        <div class="col-lg-5 order-2 order-lg-1" id="calculator">
+            <app-calculator></app-calculator>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2" id="f2">
-            section 2
-            <!-- {{vehicles[1].name}} - {{vehicles[1].price}} - <img src={{vehicles[1].img}} width="300" height="300"> -->
+        <div class="col-lg-5 order-1 order-lg-2" id="f2">
+            <div class="row">
+                <img class="col-md-12" src={{vehicles[1].img}}>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    Nazwa:
+                    {{vehicles[1].name}}
+                </div>
+                <div class="clo-6">
+                    Cena: {{vehicles[1].price}} (brutto)
+                </div>
+            </div>
         </div>
-
     </div>
 
 </div>
