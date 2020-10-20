@@ -2,16 +2,28 @@
    <h1>Kalkulator leasingowy</h1>
    <h2>Sprawdź jakie to proste!</h2>
     <div class="row">
+        
         <div class="col-lg-6 order-2 order-lg-1" id="calculator">
             <app-calculator></app-calculator>
         </div>
+
         <div class="col-lg-6 order-1 order-lg-2" id="f2">
             <div class="row">
-                <img class="col-md-12" src={{vehicles[1].img}}>
+                <a class="carousel-control-prev"  role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                    <span class="sr-only" onclick="prev()">Previous</span>
+                </a>
+                <img class="col-md-12" src={{vehicles[counter].img}}>
+                {{checkItem(counter)}}
+
+                <a class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidde  n="true" ></span>
+                    <span class="sr-only" onclick="next()">Next</span>
+                </a>
             </div>
+    
             <div class="row">
                 <div class="col-6">
-                    Nazwa:
                     {{vehicles[1].name}}
                 </div>
                 <div class="clo-6">
@@ -19,6 +31,8 @@
                 </div>
             </div>
         </div>
+
+         
     </div>
 
 </div>
