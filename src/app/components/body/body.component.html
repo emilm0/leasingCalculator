@@ -10,23 +10,22 @@
         <div class="col-lg-6 order-1 order-lg-2" id="f2">
             <div class="row">
                 <a class="carousel-control-prev" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only" onclick="prev()">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true" (click)="prev()"></span>
+                    <span class="sr-only">Previous</span>
                 </a>
-                <img class="col-8 offset-2" id="image" src={{vehicles[counter].img}}> {{checkItem(counter)}}
-
+                <img class="col-8 offset-2" id="image" src={{vehicles[counter].img}}>
                 <a class="carousel-control-next" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidde n="true"></span>
-                    <span class="sr-only" onclick="next()">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true" (click)="next()"></span>
+                    <span class="sr-only">Next</span>
                 </a>
             </div>
 
             <div class="row">
                 <div class="col-8">
-                    <b>{{vehicles[1].name}}</b>
+                    <b>{{vehicles[counter].name}}</b>
                 </div>
                 <div class="col-4" id="price">
-                    Cena: {{vehicles[1].price}} (brutto)
+                    Cena: {{vehicles[counter].price}} (brutto)
                 </div>
             </div>
         </div>

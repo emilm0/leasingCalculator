@@ -29,24 +29,22 @@ export class BodyComponent implements OnInit {
   ];
 
   checkItem(i: number): number{
-    if (i > this.vehicles.length){
+    if (i >= this.vehicles.length){
       return 0;
     }
     else if (i < 0){
       return this.vehicles.length - 1;
     }
     else{
-      return i - 1;
+      return i;
     }
   }
 
-  next(): number{
-    console.log(this.counter);
-    return this.checkItem (this.counter + 1);
+  next(): void{
+    this.counter = this.checkItem(this.counter + 1);
   }
-  prev(): number{
-    console.log(this.counter);
-    return this.checkItem (this.counter - 1);
+  prev(): void{
+    this.counter = this.checkItem(this.counter - 1);
   }
 
   constructor() { }
