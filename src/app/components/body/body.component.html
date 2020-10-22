@@ -1,38 +1,37 @@
-<div class="container col-lg-8 col-10">
-   <h1>Kalkulator leasingowy</h1>
-   <h2>Sprawdź jakie to proste!</h2>
+<div class="container col-10">
+    <h1>Kalkulator leasingowy</h1>
+    <h2>Sprawdź jakie to proste!</h2>
     <div class="row">
-        
+
         <div class="col-lg-6 order-2 order-lg-1" id="calculator">
             <app-calculator></app-calculator>
         </div>
 
         <div class="col-lg-6 order-1 order-lg-2" id="f2">
             <div class="row">
-                <a class="carousel-control-prev"  role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                <a class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only" onclick="prev()">Previous</span>
                 </a>
-                <img class="col-md-12" src={{vehicles[counter].img}}>
-                {{checkItem(counter)}}
+                <img class="col-8 offset-2" id="image" src={{vehicles[counter].img}}> {{checkItem(counter)}}
 
                 <a class="carousel-control-next" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidde  n="true" ></span>
+                    <span class="carousel-control-next-icon" aria-hidde n="true"></span>
                     <span class="sr-only" onclick="next()">Next</span>
                 </a>
             </div>
-    
+
             <div class="row">
-                <div class="col-6">
-                    {{vehicles[1].name}}
+                <div class="col-8">
+                    <b>{{vehicles[1].name}}</b>
                 </div>
-                <div class="clo-6">
+                <div class="col-4" id="price">
                     Cena: {{vehicles[1].price}} (brutto)
                 </div>
             </div>
         </div>
 
-         
+
     </div>
 
 </div>
