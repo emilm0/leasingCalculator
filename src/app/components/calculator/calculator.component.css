@@ -1,6 +1,10 @@
-.row{
-  
+#lastRow{
+    display: flex;
+    align-content: center;
 }
-.container-col-12{
-
+#label{
+    font-size: 1.4em;
+}
+#price{
+    font-size: 2em;
 }

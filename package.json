@@ -23,15 +23,16 @@
     "bootstrap": "^4.5.2",
     "j": "^1.0.0",
     "jquery": "^3.5.1",
+    "ng5-slider": "^1.2.4",
     "ngx-owl-carousel-o": "^4.0.0",
     "ngx-swiper-wrapper": "^10.0.0",
     "query": "^0.2.0",
-    "rxjs": "~6.6.0",
+    "rxjs": "^6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1001.4",
+    "@angular-devkit/build-angular": "^0.1002.0",
     "@angular/cli": "~10.1.4",
     "@angular/compiler-cli": "~10.1.4",
     "@types/jasmine": "~3.5.0",
