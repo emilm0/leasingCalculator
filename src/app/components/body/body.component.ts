@@ -1,15 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { VEHICLES } from 'src/app/classes/vehiclesList';
+import { VehicleService } from 'src/app/services/vehicle.service';
 
-export class Vehicle {
-  constructor(
-    public id: number,
-    public name: string,
-    public price: number,
-    public img: string
-  ){
-
-  }
-}
 
 @Component({
   selector: 'app-body',
@@ -20,14 +12,8 @@ export class BodyComponent implements OnInit {
 
   counter = 0;
 
-  vehicles = [
-    new Vehicle(1, 'C FORCE 520 EFI', 23900, 'assets/images/c-force-520-efi.jpg'),
-    new Vehicle(2, 'C FORCE 550 EFI EPS', 28900, 'assets/images/c-force-550-efi-eps.jpg'),
-    new Vehicle(3, 'C FORCE 820 EFI EPS', 39500, 'assets/images/c-force-800-efi-eps.jpg'),
-    new Vehicle(4, 'C FORCE 850 EFI EPS', 44500, 'assets/images/c-force-850-efi-eps.jpg'),
-    new Vehicle(5, 'C FORCE 1000 (CC)', 49900, 'assets/images/c-force-800-efi-eps.jpg')
-  ];
-
+  vehicles = VEHICLES;
+  
   checkItem(i: number): number{
     if (i >= this.vehicles.length){
       return 0;
@@ -42,15 +28,19 @@ export class BodyComponent implements OnInit {
 
   next(): void{
     this.counter = this.checkItem(this.counter + 1);
+    this.vehicleService.setPrice(this.vehicles[this.counter].price);
   }
   prev(): void{
     this.counter = this.checkItem(this.counter - 1);
+    this.vehicleService.setPrice(this.vehicles[this.counter].price);
   }
 
-  constructor() { }
+  constructor(private vehicleService: VehicleService) {  }
 
   ngOnInit(): void {
 
+    
   }
+  
 
 }

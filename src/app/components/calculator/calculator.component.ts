@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Options } from 'ng5-slider';
+import { LabelType, Options } from 'ng5-slider';
+import { VEHICLES } from 'src/app/classes/vehiclesList';
+import { VehicleService } from 'src/app/services/vehicle.service';
 
 
 @Component({
@@ -9,6 +11,8 @@ import { Options } from 'ng5-slider';
 })
 export class CalculatorComponent implements OnInit {
 
+  vehiclePrice = VEHICLES[0].price;
+
   value1 = 15;
   options1: Options = {
     floor: 0,
@@ -16,7 +20,11 @@ export class CalculatorComponent implements OnInit {
     step: 5,
     showSelectionBar: true,
     showTicks: true,
-    showTicksValues: true
+    showTicksValues: true,
+    translate: (value: number, label: LabelType): string => {
+          return value + '%';
+      }
+    
   };
 
   value2 = 36;
@@ -29,9 +37,20 @@ export class CalculatorComponent implements OnInit {
     showTicksValues: true
   };
 
-  constructor() { }
+  initialPaymant(){
+    return this.vehiclePrice * this.value1/100;
+  }
+  installment(){
+    return (this.vehiclePrice - this.initialPaymant()) / this.value2;
+  }
+
+
+  constructor(private vehicleService: VehicleService) {  }
 
   ngOnInit(): void {
+   this.vehicleService.getPrice().subscribe(newPrice =>{
+     this.vehiclePrice = newPrice;
+   });
   }
 
 }
