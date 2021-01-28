@@ -1,18 +1,24 @@
 <div class="container col-12">
     <div class="row">
         <div class="form-group col-12">
-            <label for="formControlRange">Wpłata własna: {{initialPaymant()}} zł</label>
-            <ng5-slider [(value)]="value1" [options]="options1"></ng5-slider>
+            <div class="mb-2">
+                <label>Wpłata własna: <b>{{initialPaymant()}} zł</b></label>
+            </div>
+            <div class="custom-slider">
+                <ng5-slider [(value)]="value1" [options]="options1"></ng5-slider>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="form-group col-12">
-            <label for="formControlRange">Liczba rat (mies.)</label>
-            <ng5-slider [(value)]="value2" [options]="options2"></ng5-slider>
+            <label>Liczba rat (mies.)</label>
+            <div class="custom-slider">
+                <ng5-slider [(value)]="value2" [options]="options2"></ng5-slider>
+            </div>
         </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
         <div class="form-group col-5">
             <label for="formControlRange">Koncowe rozliczenie:</label>
         </div>
@@ -24,6 +30,14 @@
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                 <label class="form-check-label" for="inlineRadio2">Zwrot</label>
+            </div>
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="form-group col-12">
+            <label>Wykup: <b>{{redemption()}} zł</b> </label>
+            <div class="custom-slider">
+                <ng5-slider [(value)]="value3" [options]="options3"></ng5-slider>
             </div>
         </div>
     </div>
