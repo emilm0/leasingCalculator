@@ -54,7 +54,7 @@ export class CalculatorComponent implements OnInit {
   }
 
   installment(): number{
-    return (this.vehiclePrice - this.initialPaymant()) / this.value2;
+    return this.leasingPeriod(this.value2);
   }
 
   redemption(): number{
@@ -64,16 +64,20 @@ export class CalculatorComponent implements OnInit {
   leasingPeriod(months: number): number{
     switch (months) {
       case 24:
-        return this.calculate(1.0315, 1.06);
+        return this.calculate(1.0315, 0.06);
       case 36:
-        return this.calculate(1.0469, 1.09);
+        return this.calculate(1.0469, 0.09);
       case 48:
-        return this.calculate(1.0624, 1.12);
+        return this.calculate(1.0624, 0.12);
     }
   }
 
   calculate(regularInterest:number, redemptionInterest:number): number{
-    return 10;
+    // price value without initial paymant and redemption
+    const basicLeasing = this.vehiclePrice - this.initialPaymant() -this.redemption();
+
+    return ((basicLeasing * regularInterest) + (this.redemption() * redemptionInterest)) / this.value2;
+    
   }
 
   constructor(private vehicleService: VehicleService) {  }
