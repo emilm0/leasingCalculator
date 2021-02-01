@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 .container {
     background-color: rgb(221, 221, 219);
     opacity: 0.9;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 80vw;
     padding: 3%;
     font-size: 1.2em;
     border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(71, 71, 71);
 }
-
+    
 #calculator {
     margin-top: auto;
     margin-bottom: auto;

@@ -1,21 +1,12 @@
-#lastRow {
-    display: flex;
-    align-content: center;
-}
-
-#label {
-    font-size: 1.4em;
+label {
+    font-size: 0.9em;
 }
 
 #price {
+    display: flex ;
     font-size: 2em;
 }
 
-.row {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 .custom-slider {
-    font-size: 16px;
+    font-size: 12px;
 }
