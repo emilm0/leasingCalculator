@@ -1,10 +1,9 @@
 .navbar {
     height: 80px;
-    background-color: rgb(33, 166, 175);
+    background-color: rgb(30, 160, 180);
 }
 
-.box{
+.box {
     background-color: darkgray;
     padding: 8px;
 }
-
