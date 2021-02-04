@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { VEHICLES } from 'src/app/classes/vehiclesList';
-
+ import { VEHICLES } from 'src/app/classes/vehiclesList';
 
 @Component({
   selector: 'app-body',
@@ -34,10 +33,6 @@ export class BodyComponent implements OnInit {
 
   constructor() {  }
 
-  ngOnInit(): void {
-
-    
-  }
-  
+  ngOnInit(): void {  }
 
 }

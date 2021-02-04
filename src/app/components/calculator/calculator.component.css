@@ -3,10 +3,15 @@ label {
 }
 
 #price {
-    display: flex ;
+    display: flex;
     font-size: 2em;
 }
 
 .custom-slider {
     font-size: 12px;
+}
+
+#attention {
+    font-size: small;
+    margin-top: 1.5em;
 }
