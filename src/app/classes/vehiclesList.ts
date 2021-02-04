@@ -13,6 +13,6 @@ export const VEHICLES: Vehicle[] = [
     new Vehicle(10, 'C FORCE 820 EFI EPS', 39900, 'assets/images/c-force-800-efi-eps.jpg'),
     new Vehicle(11, 'C FORCE 850 EFI EPS', 46900, 'assets/images/c-force-850-efi-eps.jpg'),
     new Vehicle(12, 'C FORCE 1000 EFI EPS', 51900, 'assets/images/c-force-1000-cc.jpg'),
-    new Vehicle(13, 'Z FORCE 1000 EFI EPS', 60900, 'assets/images/logo_img.jpg'),
-    new Vehicle(14, 'U FORCE 1000 EFI EPS', 60600, 'assets/images/logo_img.jpg')
+    new Vehicle(13, 'Z FORCE 1000 EFI EPS', 60900, 'assets/images/z-force-1000-efi-eps.jpg'),
+    new Vehicle(14, 'U FORCE 1000 EFI EPS', 60600, 'assets/images/u-force-1000.jpg')
 ]
