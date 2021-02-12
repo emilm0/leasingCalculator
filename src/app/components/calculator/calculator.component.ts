@@ -16,7 +16,7 @@ export class CalculatorComponent implements OnInit {
   value1 = 15;
   options1: Options = {
     floor: 0,
-    ceil: 30,
+    ceil: 45,
     step: 5,
     showSelectionBar: true,
     showTicks: true,

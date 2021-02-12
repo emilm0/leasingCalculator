@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 .container {
     background-color: rgb(221, 221, 219);
-    /* border: 3px solid gray;
-    box-shadow: 3px 3px 1px lightgray; */
     opacity: 0.9;
     margin-top: 10px;
     margin-bottom: 10px;
     min-width: 90vw;
     padding: 3%;
-    font-size: 1.2em;
+    font-size: 1.25em;
     border-radius: 10px;
     font-family: 'Lato', sans-serif;
     color: rgb(71, 71, 71);
@@ -36,4 +34,12 @@
 .carousel-control-next {
     height: 60%;
     color: black;
+}
+h2 {
+    font-weight: 700;  
+}
+#attention {
+    font-size: 0.7em;
+    font-weight: 600;
+    margin-top: 1.5em;
 }

@@ -1,14 +1,14 @@
 #mainBox {
     background-image: url("/assets/images/bg_1.jpeg");
     background-size: cover;
-    min-height: calc(100% - 1400px);
     margin-top: auto;
     display: flex;
     flex-direction: column;
+    min-height: calc(100vh - 140px);
 }
 
 #bodyBox {
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 225px);
     min-width: 80%;
     display: flex;
     align-items: center;
