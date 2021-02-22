@@ -9,6 +9,7 @@
     border-radius: 10px;
     font-family: 'Lato', sans-serif;
     color: rgb(71, 71, 71);
+    user-select: none;
 }
 
 #calculator {

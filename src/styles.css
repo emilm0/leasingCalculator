@@ -7,7 +7,12 @@
     src: url('/assets/fonts/Lato/Lato-Bold.ttf')  format('truetype');
   }
 
+  .disable-selection {
+    user-select: none; 
+}
+
 html,
 body {
+  
     height: 100%;
 }
