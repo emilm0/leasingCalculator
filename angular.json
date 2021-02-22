@@ -15,6 +15,9 @@
                     "options": {
                         "allowedCommonJsDependencies": [
                             "rxjs-compat",
+                            "rxjs/operators",
+                            "rxjs/Subject",
+                            "rxjs/Subscription",
                             "lodash"
                         ],
                         "outputPath": "dist/leasingCalculator",

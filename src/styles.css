@@ -2,6 +2,11 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
 
+@font-face {
+    font-family: 'Lato';
+    src: url('/assets/fonts/Lato/Lato-Bold.ttf')  format('truetype');
+  }
+
 html,
 body {
     height: 100%;
