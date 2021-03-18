@@ -14,8 +14,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,

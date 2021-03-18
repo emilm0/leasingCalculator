@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, state,transition, animate, style, query, stagger, animation, useAnimation } from '@angular/animations'
  import { VEHICLES } from 'src/app/classes/vehiclesList';
 
 @Component({
