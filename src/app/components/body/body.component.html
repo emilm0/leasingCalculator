@@ -14,7 +14,11 @@
                         <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
                      </svg>
                 </a>
-                <img class="col-8 offset-2" id="image" src={{vehicles[counter].img}}>
+                <div *ngFor="let vehicle of vehicles; index as i">
+                    <!-- {{counter}} {{i}} -->
+                    <img *ngIf="i == counter" class="col-8 offset-2" id="image" src={{vehicle.img}}>
+                </div>
+
 
                 <a class="carousel-control-next" role="button" (click)="next()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="48" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -34,7 +38,7 @@
         </div>
     </div>
     <div id="attention">
-        * Ostateczna oferta leasingowa zostanie przedstawiona przez autoryzowanego partnera CF Moto po zaakceptowaniu przez bank dokumentów
-         finansowych twojej firmy i twojej zdolności kredytowej. Proszę kliknąć w kontakt poniżej w celu kontaktu z autoryzowanym dilerem CF Moto dziękujemy.
+        * Ostateczna oferta leasingowa zostanie przedstawiona przez autoryzowanego partnera CF Moto po zaakceptowaniu przez bank dokumentów finansowych twojej firmy i twojej zdolności kredytowej. Proszę kliknąć w kontakt poniżej w celu kontaktu z autoryzowanym
+        dilerem CF Moto dziękujemy.
     </div>
 </div>

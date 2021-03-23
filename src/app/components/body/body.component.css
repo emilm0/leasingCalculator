@@ -35,9 +35,11 @@
     height: 60%;
     color: black;
 }
+
 h2 {
-    font-weight: 700;  
+    font-weight: 700;
 }
+
 #attention {
     font-size: 0.7em;
     font-weight: 600;
