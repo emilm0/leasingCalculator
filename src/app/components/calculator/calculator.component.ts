@@ -1,8 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { LabelType, Options } from 'ng5-slider';
 import { VEHICLES } from 'src/app/classes/vehiclesList';
-import { VehicleService } from 'src/app/services/vehicle.service';
-
 
 @Component({
   selector: 'app-calculator',
@@ -80,7 +78,7 @@ export class CalculatorComponent implements OnInit {
     
   }
 
-  constructor(private vehicleService: VehicleService) {  }
+  constructor() {  }
 
   ngOnInit(): void {
     

@@ -14,11 +14,8 @@
                         <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
                      </svg>
                 </a>
-                <div *ngFor="let vehicle of vehicles; index as i">
-                    <!-- {{counter}} {{i}} -->
-                    <img *ngIf="i == counter" class="col-8 offset-2" id="image" src={{vehicle.img}}>
-                </div>
 
+                <img class="col-8 offset-2" id="image" src={{vehicles[counter].img}}>
 
                 <a class="carousel-control-next" role="button" (click)="next()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="48" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
