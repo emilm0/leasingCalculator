@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< Updated upstream
-=======
-import { trigger, state,transition, animate, style, query, stagger, animation, useAnimation, group } from '@angular/animations'
->>>>>>> Stashed changes
- import { VEHICLES } from 'src/app/classes/vehiclesList';
+import { trigger, state,transition, animate, style, query, stagger, animation, useAnimation, group, sequence } from '@angular/animations'
+import { VEHICLES } from 'src/app/classes/vehiclesList';
 
 @Component({
   selector: 'app-body',
@@ -11,12 +8,12 @@ import { trigger, state,transition, animate, style, query, stagger, animation, u
   styleUrls: ['./body.component.css'],
   animations: [
     trigger('inOut', [
-      transition('* => *', [
-        group([
-          animate(100, style({
-            opacity: 0.1
+      transition('* => *',[
+        sequence([
+          animate(150, style({
+            opacity: 0
           })),
-          animate(200, style({
+          animate(500, style({
             opacity: 1
           }))
         ])
@@ -27,7 +24,7 @@ import { trigger, state,transition, animate, style, query, stagger, animation, u
 export class BodyComponent implements OnInit {
 
   counter = 0;
-
+  change = false;
   vehicles = VEHICLES;
 
   checkItem(i: number): number{
@@ -43,9 +40,11 @@ export class BodyComponent implements OnInit {
   }
 
   next(): void{
+    this.change = !this.change;
     this.counter = this.checkItem(this.counter + 1);
   }
   prev(): void{
+    this.change = !this.change;
     this.counter = this.checkItem(this.counter - 1);
   }
 
