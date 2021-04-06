@@ -1,10 +1,28 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< Updated upstream
+=======
+import { trigger, state,transition, animate, style, query, stagger, animation, useAnimation, group } from '@angular/animations'
+>>>>>>> Stashed changes
  import { VEHICLES } from 'src/app/classes/vehiclesList';
 
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
-  styleUrls: ['./body.component.css']
+  styleUrls: ['./body.component.css'],
+  animations: [
+    trigger('inOut', [
+      transition('* => *', [
+        group([
+          animate(100, style({
+            opacity: 0.1
+          })),
+          animate(200, style({
+            opacity: 1
+          }))
+        ])
+      ])
+    ])
+  ]
 })
 export class BodyComponent implements OnInit {
 

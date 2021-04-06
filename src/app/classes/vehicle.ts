@@ -1,9 +1,8 @@
-export class Vehicle {
-    constructor(
-      public id: number,
-      public name: string,
-      public price: number,
-      public img: string
-    ){ }
-  }
+export interface Vehicle {
+    
+      id: number,
+      name: string,
+      price: number,
+      imgUrl: string
+}
   

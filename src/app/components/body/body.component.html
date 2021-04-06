@@ -9,13 +9,17 @@
 
         <div class="col-lg-6 order-1 order-lg-2 mb-3">
             <div class="row">
-                <a class="carousel-control-prev" role="button" (click)="prev()">
+                <a @inOut class="carousel-control-prev" role="button" (click)="prev()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="48" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                         <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
                      </svg>
                 </a>
+<<<<<<< Updated upstream
 
                 <img class="col-8 offset-2" id="image" src={{vehicles[counter].img}}>
+=======
+                <img class="col-8 offset-2" id="image" src={{vehicles[counter].imgUrl}}>
+>>>>>>> Stashed changes
 
                 <a class="carousel-control-next" role="button" (click)="next()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="48" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
